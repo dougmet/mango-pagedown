@@ -19,23 +19,11 @@ rmarkdown::render("test-pagedown.Rmd")
 and this will build the html without opening the browser.
 
 
-## Layout
-
-Main assets are in:
-
-```
-css
-img
-templates
-```
-
-The `test-pagedown.Rmd` file is a working template. It explicitly sets the css to the files used here.
-
-The `word` directory is an example of current materials. Probably should have added as pdf for fair comparison.
-
 ## Making changes
 
 ### CSS
+
+in `css/`
 
 Instead of adding on CSS I've copied through everything from pagedown. So we can change as much as we like there. There are three:
 
@@ -43,7 +31,15 @@ Instead of adding on CSS I've copied through everything from pagedown. So we can
 * `default.css`: some core css that I (Doug) don't understand
 * `mango-page.css`: This is where we can tweak margins and footers and so on
 
+### Images
+
+in `img/`
+
+There are some standard branding images, both png and svg, that we can use.
+
 ### Layout
+
+in `templates/`
 
 I think most of the layout changes will happen in `templates/mango-paged.html`. This is a template doc that pandoc uses to turn the markdown file into html. I (Doug) don't really know this templating language but I feel it may be key.
 
@@ -56,6 +52,8 @@ Exercise {#exercise}
 And somehow that becomes a named div in html.
 
 ## Our current style
+
+in `word/`
 
 You can see what the material looks like now in `word/03 Getting Data into R.docx`. Some things would be nice to keep:
 
