@@ -51,6 +51,9 @@ Exercise {#exercise}
 
 And somehow that becomes a named div in html.
 
+The templates in the pagedown package may be informative. For instance the resume one does cool stuff: [https://github.com/rstudio/pagedown/blob/master/inst/resources/html/resume.html](https://github.com/rstudio/pagedown/blob/master/inst/resources/html/resume.html)
+
+
 ## Our current style
 
 in `word/`
