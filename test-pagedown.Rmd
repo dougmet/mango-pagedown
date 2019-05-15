@@ -1,0 +1,41 @@
+---
+title: "Mango Pagedown Test"
+author: "Mango The Cat"
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_paged:
+    toc: true
+    # change to true for a self-contained document, but it'll be a litte slower for Pandoc to render
+    self_contained: false
+    css:
+      - "mango-fonts.css"
+      - "mango-page.css"
+      - "default.css"
+    template: "mango-paged.html"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Chapter Name
+
+Lucas ipsum dolor sit amet mon bespin twi'lek kamino kessel windu cade windu mara padmé. Kashyyyk wookiee alderaan twi'lek antilles dooku. Antilles skywalker hutt naboo dantooine mothma. Jabba k-3po twi'lek droid. Mon cade endor jango antilles sidious. Hutt fisto zabrak calrissian mara kenobi endor. Biggs organa darth solo dooku utapau lars. Mothma c-3p0 antilles skywalker yoda moff hutt. Leia antilles jango hutt mon. Wampa watto wicket tatooine tatooine ventress solo. Kenobi thrawn darth mustafar mace moff gonk ben yavin.
+
+Darth mon grievous jinn dagobah luuke. Mon jabba ponda utapau ewok darth skywalker. Mace thrawn lobot vader. Organa qui-gon windu darth tatooine. Lando moff lando jawa qui-gonn ewok mandalore. Darth calamari cade mon dagobah solo. Mon darth secura solo coruscant moff sidious dagobah antilles. Solo solo kessel tatooine ewok wedge fett skywalker utapau. Maul r2-d2 yoda moff kenobi jabba. Palpatine c-3p0 darth darth luuke solo. Darth solo sidious dantooine jabba solo binks mandalore darth. Luke maul kessel dantooine mon solo mandalore solo han.
+
+Tatooine darth jade gonk jabba. Darth dooku organa antilles skywalker lobot ponda luuke kamino. Darth aayla ponda boba jawa darth grievous thrawn. Droid kenobi sidious jawa naboo solo mustafar. Sidious mon moff darth fisto r2-d2. Skywalker antilles dooku calamari solo moff. Tatooine solo skywalker twi'lek. Mara kessel yoda ewok maul. Vader sith k-3po wicket luuke calrissian jade calrissian. Padmé solo darth grievous. Jade solo mon tatooine calamari fisto antilles hutt. Sidious sith skywalker gonk alderaan ben solo jango.
+
+Wedge padmé grievous kit darth dantooine organa. Wedge moff mara moff naboo c-3po kashyyyk. Kessel darth ben dagobah hutt cade antilles. Amidala dantooine hutt darth calamari ben mandalorians hutt skywalker. Watto skywalker owen kamino yavin calrissian twi'lek. Mandalorians wicket kashyyyk yoda jango darth ackbar boba. Skywalker moff skywalker moff. Organa kessel moff lando darth bothan darth. Darth darth amidala droid. Coruscant kashyyyk fisto palpatine jade twi'lek ben. Grievous skywalker padmé windu.
+
+Naboo yoda gamorrean vader vader baba. Darth tatooine kenobi darth han droid darth. Darth binks sith lars mandalore ahsoka padmé luke. Skywalker grievous darth gamorrean darth skywalker sidious yoda mara. Dantooine coruscant solo padmé amidala. Yoda grievous darth moff anakin skywalker secura. Hutt hutt obi-wan endor twi'lek calrissian kit k-3po. Organa organa sidious dooku. Qui-gon jade ponda organa skywalker maul mara. Endor sebulba qui-gonn grievous padmé grievous boba hutt. Biggs leia bespin ackbar calamari moff wookiee ackbar.
+
+Leia windu darth ewok. Sidious tusken raider mon lando. Jawa jabba mon solo jade moff. C-3p0 boba mon jabba solo windu. Grievous windu moff grievous. Solo jango aayla dagobah moff mandalore naboo wookiee. Jango palpatine grievous darth lando boba. Leia bothan hutt wedge. Skywalker wicket lando moff. Padmé vader jinn ackbar mandalorians mace anakin. Darth darth hutt ewok alderaan skywalker jabba. Palpatine coruscant darth anakin tatooine. Kashyyyk yavin leia biggs jabba binks. Grievous han wedge vader.
+
+Hutt binks skywalker binks. Boba obi-wan sebulba ben yoda darth. Hutt ackbar darth solo solo. Jawa antilles luke hutt c-3p0 darth. Ahsoka obi-wan darth amidala. Mandalorians padmé tatooine sith aayla. Darth padmé lando organa jango. Kit fett utapau han mandalore watto fisto. Hutt leia organa mustafar. Kessel windu endor obi-wan darth kessel han. Yoda qui-gon boba solo. Lobot darth boba ackbar darth dantooine. Ben c-3po darth mara dooku. Darth organa kamino darth calrissian owen kessel. Darth fisto grievous mon moff.
+
+Solo jawa skywalker wicket alderaan luke naboo ackbar palpatine. Mandalorians solo greedo yoda. Aayla hoth tusken raider thrawn skywalker. Moff gonk hutt coruscant organa boba organa moff. Mon anakin antilles fett skywalker fett. Obi-wan cade darth moff luuke maul. Jabba lobot yoda thrawn darth. Alderaan antilles luke ackbar maul. Mustafar moff moff darth hutt owen han endor sidious. Moff alderaan ben biggs mandalore skywalker darth boba. Solo mara wookiee moff dagobah mon skywalker lars tatooine.
+
+Hoth organa darth ben moff. Yoda skywalker droid dagobah. Boba coruscant baba organa solo. Leia solo darth antilles gonk skywalker fett. Qui-gonn skywalker r2-d2 boba hutt darth. Gonk yavin yavin wookiee lars moff yoda qui-gonn. Bothan grievous yavin solo sith. Fett obi-wan ackbar wampa chewbacca calrissian hutt leia ben. Bothan dagobah luuke mace. Windu dantooine mon anakin jawa ventress darth dantooine skywalker. Qui-gon vader mace cade moff lars solo kessel. Grievous darth darth sith organa jawa.
+
+Grievous thrawn yavin amidala solo darth cade darth solo. Solo hutt wookiee coruscant antilles jar jar c-3p0 organa. Vader anakin ventress sith hutt mon tatooine. Hutt watto biggs qui-gonn. Moff amidala jinn solo. Vader jabba fett wampa obi-wan hutt darth sith lars. Anakin moff ackbar skywalker sebulba lobot organa mothma ewok. Fisto fett hutt luke twi'lek skywalker anakin moff solo. Darth kessel jabba solo ventress skywalker fett darth. Dagobah sidious c-3p0 ackbar. Hutt chewbacca droid jawa antilles mon darth dantooine kenobi.
