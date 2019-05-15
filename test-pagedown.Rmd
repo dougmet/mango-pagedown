@@ -8,10 +8,10 @@ output:
     # change to true for a self-contained document, but it'll be a litte slower for Pandoc to render
     self_contained: false
     css:
-      - "mango-fonts.css"
-      - "mango-page.css"
-      - "default.css"
-    template: "mango-paged.html"
+      - "css/mango-fonts.css"
+      - "css/mango-page.css"
+      - "css/default.css"
+    template: "templates/mango-paged.html"
 ---
 
 ```{r setup, include=FALSE}
