@@ -20,6 +20,52 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Chapter Name
 
+## Headings
+
+Our training sections usually start at level 2.
+
+
+## Fonts
+
+I've managed to change the fonts to Open Sans in `css/mango-fonts.css` that's about it.
+
+### Body
+
+Open Sans
+
+### Titles
+
+Might be OK Open Sans. We used to have level 3 as orange which is easy enough
+
+### Numbering
+
+Currently use `{chapter}`.`{section}`.`{sub-section}`.
+
+Nice to haves would be a chapter front page saying Chapter `{Chapter Number}` `{Chapter Name}`.
+
+### Code
+
+My guess is that the default code is OK but we might want to fancy it up a bit.
+
+```r
+# A non-executed R-block
+
+f <- function(x) {
+  if (is.null(x)) 0 else x
+}
+```
+
+
+```python
+# python code looks like this
+def f(x):
+    """Some big long docstring"""
+    return(0 if x is null else x)
+```
+
+## Filler 
+
+
 Lucas ipsum dolor sit amet mon bespin twi'lek kamino kessel windu cade windu mara padmé. Kashyyyk wookiee alderaan twi'lek antilles dooku. Antilles skywalker hutt naboo dantooine mothma. Jabba k-3po twi'lek droid. Mon cade endor jango antilles sidious. Hutt fisto zabrak calrissian mara kenobi endor. Biggs organa darth solo dooku utapau lars. Mothma c-3p0 antilles skywalker yoda moff hutt. Leia antilles jango hutt mon. Wampa watto wicket tatooine tatooine ventress solo. Kenobi thrawn darth mustafar mace moff gonk ben yavin.
 
 Darth mon grievous jinn dagobah luuke. Mon jabba ponda utapau ewok darth skywalker. Mace thrawn lobot vader. Organa qui-gon windu darth tatooine. Lando moff lando jawa qui-gonn ewok mandalore. Darth calamari cade mon dagobah solo. Mon darth secura solo coruscant moff sidious dagobah antilles. Solo solo kessel tatooine ewok wedge fett skywalker utapau. Maul r2-d2 yoda moff kenobi jabba. Palpatine c-3p0 darth darth luuke solo. Darth solo sidious dantooine jabba solo binks mandalore darth. Luke maul kessel dantooine mon solo mandalore solo han.
