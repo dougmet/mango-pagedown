@@ -33,6 +33,28 @@ The `test-pagedown.Rmd` file is a working template. It explicitly sets the css t
 
 The `word` directory is an example of current materials. Probably should have added as pdf for fair comparison.
 
+## Making changes
+
+### CSS
+
+Instead of adding on CSS I've copied through everything from pagedown. So we can change as much as we like there. There are three:
+
+* `mango-fonts.css`: fonts
+* `default.css`: some core css that I (Doug) don't understand
+* `mango-page.css`: This is where we can tweak margins and footers and so on
+
+### Layout
+
+I think most of the layout changes will happen in `templates/mango-paged.html`. This is a template doc that pandoc uses to turn the markdown file into html. I (Doug) don't really know this templating language but I feel it may be key.
+
+For example. We'll need to add new divs for exercise boxes. In markdown it'll be something like:
+
+```
+Exercise {#exercise}
+```
+
+And somehow that becomes a named div in html.
+
 ## Our current style
 
 You can see what the material looks like now in `word/03 Getting Data into R.docx`. Some things would be nice to keep:
