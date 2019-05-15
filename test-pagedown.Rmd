@@ -55,6 +55,7 @@ f <- function(x) {
 }
 ```
 
+where as python code might look like
 
 ```python
 # python code looks like this
@@ -62,6 +63,18 @@ def f(x):
     """Some big long docstring"""
     return(0 if x is null else x)
 ```
+
+A code block that returns stuff looks like
+
+```{r, runstuff}
+f <- function(x) {
+  if (is.null(x)) 0 else x
+}
+
+f(NULL)
+```
+
+I wonder if that code output could be nicer. Not high priority.
 
 ## Filler 
 
