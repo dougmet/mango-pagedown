@@ -10,7 +10,7 @@ You'll need to install [pagedown](https://github.com/rstudio/pagedown) in R.
 install.packages("pagedown")
 ```
 
-To build the test Rmd you open it in RStudio and click the "knit" button, and this will knit and openthe file in your browser. Otherwise you can do:
+To build the test Rmd, `test-pagedown.Rmd`, you open it in RStudio and click the "knit" button, and this will knit and openthe file in your browser. Otherwise you can do:
 
 ```r
 rmarkdown::render("test-pagedown.Rmd")
