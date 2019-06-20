@@ -137,3 +137,17 @@ h1, h2, h3, h4, h5, h6 {
 .front-matter-container+.level1 h1 {
   counter-reset: page;
 }
+
+/* Mango additions for exercises and warnings */
+
+.exercisebox {
+  outline: 5px dotted green;
+}
+
+.warningbox {
+  outline: 5px dotted red;
+}
+
+.infobox {
+  outline: 5px dotted yellow;
+}

@@ -12,6 +12,7 @@ output:
       - "css/mango-page.css"
       - "css/default.css"
     template: "templates/mango-paged.html"
+    keep_md: true # just for testing
 ---
 
 ```{r setup, include=FALSE}
@@ -96,13 +97,37 @@ ggplot(iris) +
   geom_histogram(aes(x = Sepal.Width, fill = Species), bins=20)
 ```
 
-## Filler 
+## Exercises and info boxes
 
+We're going to need some way to make exercise boxes. This could be by applying a class to a section heading: `{.exercise}`
+
+### Exercise {.exercisebox}
+
+It looks like you can use a section header and a class. The code here looks like:
+
+```markdown
+### Exercise {.exercisebox}
+```
+
+And then this puts everything until the next section heading in a div with the exercise class. This is super easy to style with css. We might want to remove the section label, this is up for discussion.
+
+1. Question 1
+2. Question 2
+
+### Warnings
+
+### Watch out! {.warningbox}
+
+Some important warning message. Again, we can remove the section heading with javascript. There is examples of this already in the existing code.
+
+### Info
+
+### Interesting info {.infobox}
+
+When we're done can put icons and style it nicely.
+
+## Filler 
 
 Lucas ipsum dolor sit amet mon bespin twi'lek kamino kessel windu cade windu mara padmé. Kashyyyk wookiee alderaan twi'lek antilles dooku. Antilles skywalker hutt naboo dantooine mothma. Jabba k-3po twi'lek droid. Mon cade endor jango antilles sidious. Hutt fisto zabrak calrissian mara kenobi endor. Biggs organa darth solo dooku utapau lars. Mothma c-3p0 antilles skywalker yoda moff hutt. Leia antilles jango hutt mon. Wampa watto wicket tatooine tatooine ventress solo. Kenobi thrawn darth mustafar mace moff gonk ben yavin.
 
 Darth mon grievous jinn dagobah luuke. Mon jabba ponda utapau ewok darth skywalker. Mace thrawn lobot vader. Organa qui-gon windu darth tatooine. Lando moff lando jawa qui-gonn ewok mandalore. Darth calamari cade mon dagobah solo. Mon darth secura solo coruscant moff sidious dagobah antilles. Solo solo kessel tatooine ewok wedge fett skywalker utapau. Maul r2-d2 yoda moff kenobi jabba. Palpatine c-3p0 darth darth luuke solo. Darth solo sidious dantooine jabba solo binks mandalore darth. Luke maul kessel dantooine mon solo mandalore solo han.
-
-Tatooine darth jade gonk jabba. Darth dooku organa antilles skywalker lobot ponda luuke kamino. Darth aayla ponda boba jawa darth grievous thrawn. Droid kenobi sidious jawa naboo solo mustafar. Sidious mon moff darth fisto r2-d2. Skywalker antilles dooku calamari solo moff. Tatooine solo skywalker twi'lek. Mara kessel yoda ewok maul. Vader sith k-3po wicket luuke calrissian jade calrissian. Padmé solo darth grievous. Jade solo mon tatooine calamari fisto antilles hutt. Sidious sith skywalker gonk alderaan ben solo jango.
-
-Wedge padmé grievous kit darth dantooine organa. Wedge moff mara moff naboo c-3po kashyyyk. Kessel darth ben dagobah hutt cade antilles. Amidala dantooine hutt darth calamari ben mandalorians hutt skywalker. Watto skywalker owen kamino yavin calrissian twi'lek. Mandalorians wicket kashyyyk yoda jango darth ackbar boba. Skywalker moff skywalker moff. Organa kessel moff lando darth bothan darth. Darth darth amidala droid. Coruscant kashyyyk fisto palpatine jade twi'lek ben. Grievous skywalker padmé windu.
