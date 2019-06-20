@@ -126,8 +126,44 @@ Some important warning message. Again, we can remove the section heading with ja
 
 When we're done can put icons and style it nicely.
 
-## Filler 
+## Python 
 
-Lucas ipsum dolor sit amet mon bespin twi'lek kamino kessel windu cade windu mara padmé. Kashyyyk wookiee alderaan twi'lek antilles dooku. Antilles skywalker hutt naboo dantooine mothma. Jabba k-3po twi'lek droid. Mon cade endor jango antilles sidious. Hutt fisto zabrak calrissian mara kenobi endor. Biggs organa darth solo dooku utapau lars. Mothma c-3p0 antilles skywalker yoda moff hutt. Leia antilles jango hutt mon. Wampa watto wicket tatooine tatooine ventress solo. Kenobi thrawn darth mustafar mace moff gonk ben yavin.
+Does Python just work? Well it does. Mostly. I'm having some issues with plots too that needs working out.
 
-Darth mon grievous jinn dagobah luuke. Mon jabba ponda utapau ewok darth skywalker. Mace thrawn lobot vader. Organa qui-gon windu darth tatooine. Lando moff lando jawa qui-gonn ewok mandalore. Darth calamari cade mon dagobah solo. Mon darth secura solo coruscant moff sidious dagobah antilles. Solo solo kessel tatooine ewok wedge fett skywalker utapau. Maul r2-d2 yoda moff kenobi jabba. Palpatine c-3p0 darth darth luuke solo. Darth solo sidious dantooine jabba solo binks mandalore darth. Luke maul kessel dantooine mon solo mandalore solo han.
+```{python pythontest}
+import pandas as pd
+df = pd.DataFrame({'a': [1,2,3], 'b':['a', 'b', 'c']})
+print(df.head())
+```
+
+Looks OK. I don't love the syntax highlighting but that might be a Pandoc thing. And does it carry through?
+
+```{python pythoncarrytest}
+df.shape
+```
+
+OK Good. What about plots?
+
+```{python pyplot, eval=FALSE}
+import seaborn as sns
+import matplotlib.pyplot as plt
+iris = sns.load_dataset("iris")
+sns.pairplot(iris, hue="species")
+plt.show()
+```
+
+The above works in a notebook but crashes in a separate render. What about pure matplotlib
+
+```{python matplotlibplot, eval=FALSE}
+import matplotlib.pyplot as plt
+import numpy as np
+x = np.random.random(20)
+y = np.random.random(20)
+plt.scatter(x, y)
+plt.show()
+```
+
+No this hangs too when rendering separately. Darn. It's something to do with Matplotlib loading Qt. RStudio say they've fixed it but I don't think it's fixed.
+
+Perhaps python will have to go into markdown separately until we can fix this?
+
