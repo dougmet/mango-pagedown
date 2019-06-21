@@ -157,8 +157,22 @@ h1, h2, h3, h4, h5, h6 {
 /* Mango additions for exercises and warnings */
 
 .exercisebox {
-  outline: 5px dotted green;
+  padding: 1em 1em 1em 4em;
+  margin-bottom: 10px;
+  outline: 2px solid LightGrey;
+  position:relative
 }
+
+.exercisebox:before {
+  content: "\f044";
+  font-family: FontAwesome;
+  left:10px;
+  position:absolute;
+  top: 1em;
+  font-size: 45px;
+  color: darkorange;
+}
+
 
 .warningbox {
   outline: 5px dotted red;
