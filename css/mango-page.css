@@ -33,8 +33,9 @@
     content: counter(page);
   }
   @bottom-right {
-    background-image: url(../img/MangoSolutions_Colour.svg);
-    background-size: 1.5in 1in;
+    background-image: url(../img/Mango_Colour_white_textRGB.png);
+    background-size: 390px 96px;
+    background-repeat: no-repeat;
     display: inline-block;
     width: 1.5in; 
     content:"";

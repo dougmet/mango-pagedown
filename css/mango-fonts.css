@@ -1,7 +1,7 @@
 @import 'https://fonts.googleapis.com/css?family=Open+Sans';
 
 body {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: 'Open Sans Light', Helvetica, sans-serif;
 }
 blockquote {
   font-family: 'Open Sans', Helvetica, sans-serif;
@@ -11,4 +11,8 @@ code {
 }
 pre, code {
   font-size: .95em;
+}
+
+h3 {
+  color: #FF4D00
 }

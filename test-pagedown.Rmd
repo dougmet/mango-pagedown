@@ -32,11 +32,11 @@ I've managed to change the fonts to Open Sans in `css/mango-fonts.css` that's ab
 
 ### Body
 
-Open Sans
+Open Sans Light
 
 ### Titles
 
-Might be OK Open Sans. We used to have level 3 as orange which is easy enough
+Might be OK Open Sans. We used to have level 3 as orange which is easy enough. The new font should be Din Regular I think.
 
 ### Numbering
 
