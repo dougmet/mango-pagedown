@@ -32,11 +32,11 @@ I've managed to change the fonts to Open Sans in `css/mango-fonts.css` that's ab
 
 ### Body
 
-Open Sans
+Open Sans Light
 
 ### Titles
 
-Might be OK Open Sans. We used to have level 3 as orange which is easy enough
+Might be OK Open Sans. We used to have level 3 as orange which is easy enough. The new font should be Din Regular I think. I've set this in the CSS **but** it might need to be installed. And even then it might default back to Open Sans. Need to watch this.
 
 ### Numbering
 
@@ -77,6 +77,17 @@ f(NULL)
 
 I wonder if that code output could be nicer. Not high priority.
 
+### Equations
+
+Is it mathjax? I think so. So... It's double dollars for a big equation. I'm changing the font for math I think to Times then serif.
+
+$$
+E = \gamma mc^2
+$$
+
+And single dollars for inline $E=mc^2$ equations.
+
+
 ## Plots
 
 We do a fair amount of plots with code
@@ -101,40 +112,29 @@ ggplot(iris) +
 
 We're going to need some way to make exercise boxes. This could be by applying a class to a section heading: `{.exercise}`
 
-### Exercise {.exercisebox}
+### Exercise {.exercisebox - }
 
 It looks like you can use a section header and a class. The code here looks like:
 
 ```markdown
-### Exercise {.exercisebox}
+### Exercise {.exercisebox - }
 ```
 
-And then this puts everything until the next section heading in a div with the exercise class. This is super easy to style with css. We might want to remove the section label, this is up for discussion.
+And then this puts everything until the next section heading in a div with the exercise class. The dash is the part that suppresses the section label. Everything else can be styled with css.
 
 1. Question 1
 2. Question 2
 
-### Exercise boxes as divs
-
-The text below is wrapped in an html div `<div class="exercisebox">`
-
-<div class="exercisebox">
-**Unnumbered Exercise with a div**
-
-Annoyingly we lose the header style etc. I still think a JS solution would be better here. Check what the resumé does as that messes around with this sort of thing.
-
-</div>
-
 
 ### Warnings
 
-### Watch out! {.warningbox}
+### Watch out! {.warningbox - }
 
-Some important warning message. Again, we can remove the section heading with javascript. There is examples of this already in the existing code.
+Some important warning message. Again, the dash removes the numbering. There is examples of this already in the existing code.
 
 ### Info
 
-### Interesting info {.infobox}
+### Interesting info {.infobox - }
 
 When we're done can put icons and style it nicely.
 
