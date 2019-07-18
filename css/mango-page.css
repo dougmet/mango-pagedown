@@ -8,6 +8,11 @@
 
 }
 
+@media print {
+  @page { margin: 0; }
+  body { margin: 1.6cm; }
+}
+
 /* store some string variables */
 .shorttitle1 {
   string-set: h1-text content(text);
@@ -33,8 +38,8 @@
     content: counter(page);
   }
   @bottom-right {
-    background-image: url(../img/Mango_Colour_white_textRGB.png);
-    background-size: 390px 96px;
+    background-image: url(../img/mango-full.svg);
+    background-size: 1.5in 1in;
     background-repeat: no-repeat;
     display: inline-block;
     width: 1.5in; 
@@ -64,7 +69,7 @@
     content: counter(page);
   }
   @bottom-left {
-    background-image: url(../img/MangoSolutions_Colour.svg);
+    background-image: url(../img/mango-full.svg);
     background-size: 1.5in 1in;
     display: inline-block;
     width: 1.5in; 

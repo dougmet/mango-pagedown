@@ -13,6 +13,19 @@ pre, code {
   font-size: .95em;
 }
 
+h1 {
+  font-family: 'DIN Bold', 'Open Sans', Helvetica, sans-serif;
+}
+
+h2 {
+  font-family: 'DIN Regular', 'Open Sans', Helvetica, sans-serif;
+}
+
 h3 {
-  color: #FF4D00
+  font-family: 'DIN Regular', 'Open Sans', Helvetica, sans-serif;
+  color: #FF4D00;
+}
+
+.math {
+  font-family: Times, serif;
 }
