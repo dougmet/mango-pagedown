@@ -1,16 +1,16 @@
 /* page size */
+
 @page {
-  /*size: 6in 9in; /* var(--pagedjs-width) doesn't work in browser when printing */
-  size: 8in 10in;
-}
-
-@page :blank {
-
+  size: A4;
+  margin: 1.6cm;
 }
 
 @media print {
-  @page { margin: 0; }
-  body { margin: 1.6cm; }
+  html, body {
+    width: 210mm;
+    height: 297mm;
+    margin: 0;
+  }
 }
 
 /* store some string variables */
