@@ -13,17 +13,20 @@ pre, code {
   font-size: .95em;
 }
 
-h1 {
+h1, h2 {
   font-family: 'DIN Bold', 'Open Sans', Helvetica, sans-serif;
 }
 
-h2 {
+h3, h4 {
   font-family: 'DIN Regular', 'Open Sans', Helvetica, sans-serif;
 }
 
 h3 {
-  font-family: 'DIN Regular', 'Open Sans', Helvetica, sans-serif;
   color: #FF4D00;
+}
+
+h4 {
+  color: #848483;
 }
 
 .math {

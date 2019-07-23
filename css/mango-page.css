@@ -2,14 +2,14 @@
 
 @page {
   size: A4;
-  margin: 1.6cm;
+  margin: 2cm 2cm 1.6cm 2cm;
+  
 }
 
 @media print {
   html, body {
     width: 210mm;
     height: 297mm;
-    margin: 0;
   }
 }
 
@@ -39,7 +39,7 @@
   }
   @bottom-right {
     background-image: url(../img/mango-full.svg);
-    background-size: 1.5in 1in;
+    background-size: 1.5in 0.5in;
     background-repeat: no-repeat;
     display: inline-block;
     width: 1.5in; 
@@ -70,7 +70,8 @@
   }
   @bottom-left {
     background-image: url(../img/mango-full.svg);
-    background-size: 1.5in 1in;
+    background-size: 1.5in 0.5in;
+    background-repeat: no-repeat;
     display: inline-block;
     width: 1.5in; 
     content:"";
@@ -162,24 +163,38 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Mango additions for exercises and warnings */
 
-.exercisebox {
-  padding: 1em 1em 1em 4em;
+.exercisebox, .warningbox, .infobox {
+  padding: 1em 2em 1em 6em;
   margin-bottom: 10px;
   outline: 2px solid LightGrey;
-  position:relative
+  position:relative;
+  break-inside: avoid;
+  background-size: 4em 4em;
+  background-repeat: no-repeat;
+  background-position: 1em center;
+  display: inline-block;
+  width: 100%;
 }
 
-.exercisebox:before {
-  content: url(../img/pencil_pad.svg);
-  left:10px;
-  position:absolute;
-  top: 1em;
+/* An alternative I'm keeping note of */
+/*.exercisebox h3,.exercisebox h4 {
+  background-image: url(../img/icon_notepad.svg);
+  background-size: 4em 4em;
+  background-repeat: no-repeat;
+  padding: 1em 1em 2em 4em;
+  margin:0;
+  display: inline-block;
+}*/
+
+.exercisebox {
+  background-image: url(../img/icon_notepad.svg);
+  background-position: 1em 1em;
 }
 
 .warningbox {
-  outline: 5px dotted red;
+  background-image: url(../img/icon_warning.svg);
 }
 
 .infobox {
-  outline: 5px dotted yellow;
+  background-image: url(../img/icon_bulb.svg);
 }
