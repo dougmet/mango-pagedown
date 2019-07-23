@@ -175,7 +175,7 @@ On a Windows machine I click on the start menu and type "environment" and it giv
 
 On a Mac you probably put `export QT_QPA_PLATFORM_PLUGIN_PATH='/path/to/anaconda/plugins/platforms'` inside .bash_profile (untested).
 
-```{python pyplot, eval=FALSE}
+```{python pyplot, eval=TRUE}
 import seaborn as sns
 import matplotlib.pyplot as plt
 iris = sns.load_dataset("iris")
@@ -186,7 +186,7 @@ plt.show()
 
 What about pure matplotlib
 
-```{python matplotlibplot, eval=FALSE}
+```{python matplotlibplot, eval=TRUE}
 import matplotlib.pyplot as plt
 import numpy as np
 x = np.random.random(20)
