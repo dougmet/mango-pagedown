@@ -163,7 +163,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Mango additions for exercises and warnings */
 
-.exercisebox, .warningbox, .infobox {
+.exercisebox, .warningbox, .infobox, .setupbox {
   padding: 1em 2em 1em 6em;
   margin-bottom: 10px;
   outline: 2px solid LightGrey;
@@ -196,5 +196,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .infobox {
-  background-image: url(../img/icon_bulb.svg);
+  background-image: url(../img/icon_bulb_1034373.svg);
+}
+
+.setupbox {
+  background-image: url(../img/icon_cog.svg);
 }

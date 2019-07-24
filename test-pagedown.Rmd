@@ -141,9 +141,13 @@ A warning with no title. You just get straight into it. It looks OK actually.
 
 ### Info
 
-#### Interesting info {.infobox - }
+### Interesting info {.infobox - }
 
-When we're done can put icons and style it nicely.
+Wow this is a really interesting point
+
+### Installing X Y Z {.setupbox - }
+
+Not sure we've used these much but could be good for installation tips, setup stuff. 
 
 ## Python 
 
@@ -178,6 +182,7 @@ On a Mac you probably put `export QT_QPA_PLATFORM_PLUGIN_PATH='/path/to/anaconda
 ```{python pyplot, eval=TRUE}
 import seaborn as sns
 import matplotlib.pyplot as plt
+plt.switch_backend('agg')
 iris = sns.load_dataset("iris")
 sns.pairplot(iris, hue="species")
 plt.show()
