@@ -11,7 +11,6 @@ output:
       - "css/mango-fonts.css"
       - "css/mango-page.css"
       - "default"
-    template: "templates/mango-paged.html"
     keep_md: true # just for testing
 ---
 
